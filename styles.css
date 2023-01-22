@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+:root{
+    --main-color: #c6c1c7ea;
+    --black-color:#000000;
+    --border:0.1rem solid rgba(255,255,255,0.4);
+
+}
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;/*geçiş*/
+}
+
+html{
+        font-size:62.5% ;
+        overflow-x: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+}
+/*scroll start*/
+html::-webkit-scrollbar{
+    width:  0.8rem;
+    background-color: white;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: var(--black-color);
+}
+/*scroll end*/
+
+body{
+    background-color: var(--main-color);
+    height: 200vh;
+    
+}
+section{
+    padding: 3.5rem 7; /*hizalıyor*/
+}
+
+   /* header start*/
+   header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem; /*köşeleri için*/
+    box-shadow: 0px 0 px 17px -2px rgba(0,0,0.75);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10rem;
+}
+   .header .navbar a{
+     margin: 0.1rem;
+     font-size: 1.6 rem;
+     color:var(--black-color);
+     border-bottom:0.1rem solid transparent ;
+     
+    }
+    .header .navbar .active,  
+   .header .navbar a:hover{
+    border-color: blue;
+    padding-bottom: 0.5 rem;
+   }   
+   /*header end*/
+/* home  start*/
+.home{
+    min-height: 100vh;
+    background-image: url("images/y.jpg")
+    ;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+.home .content{
+    max-width: 70rem;
+    
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color:white ;
+    height: 8rem;
+    text-align: center ;
+   
+}
+.home .content p{
+    font-size: 3rem;
+    font-weight: 50;
+    line-height: 2;
+    text-align: center;
+    color: rgb(212, 144, 144);
+  
+}
+/* home end*/   
+
+/*about start*/
+.about{
+    min-height: 100vh;
+}
+.about .content h3{
+    text-align: center;
+    font-size: 6rem;
+    color:white ;
+    height: 8rem;
+}
+.about .content p{
+    font-size: 3rem;
+    font-weight: 50;
+    line-height: 2;
+    text-align: center;
+    color: rgb(73, 62, 62);
+  /*  width: 200px;
+    border:1px solid rgb(255, 253, 253);
+    padding:10px;
+ 
+    overflow-wrap: break-word;*/ /*kutu*/
+}
+/*about end*/
+
+/* hobbies start*/
+.hobbies{
+    min-height: 100vh;
+}
+.hobbies .content h3{
+    text-align: center;      /*rgb(212, 144, 144);*/
+    font-size: 6rem;
+    color:white ;
+    height: 8rem;
+}
+.hobbies ul li { 
+    font-size: 3rem;
+    font-weight: 70px;
+    line-height: 2;
+    text-align: center;
+    color: rgb(73,62,62);
+}
+
+/* hobbies end */
+
+/* photo gallery  start*/
+.photogallery{
+    min-height: 100vh ;
+}
+.photogallery .content h3{
+    text-align: center;
+    font-size: 6rem;
+    color:white ;
+    height: 8rem;
+}
+
+/* photo gallery end */
+
+/* contact start*/
+.contact{
+    min-height: 100vh;
+}
+.contact .heading{
+    text-align: center;
+    font-size: 6rem;
+    color:white ;
+    height: 8rem;
+}
+
+.contact .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap ;
+    gap: 1 rem;  
+}
+.contact .row .map{
+    flex: 1 1 45 rem;
+    width: 100%;
+    object-fit: cover;
+}
+/* contact end*/
+
+/*footer start*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1170px;
+    
+    margin: 1px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #000000;
+    padding: 20px 0;
+}
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px ;
+    text-transform: capitalize;
+    color: blue;
+    text-decoration: none;
+    font-weight: 300 ;
+    text-underline-position: above;
+    display: block;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.699);
+    margin-right:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+   background-color: #ffffff;
+   color: black;
+}
+.footer-col .x{
+  float: left;
+  height: 40px;
+  width: 40px;
+  word-wrap: b;
+      width: 90rem;
+    border:1px solid rgb(255, 253, 253);
+    padding:10px;
+ 
+    overflow-wrap: break-word; /*kutu*/
+    word-spacing: 50px
+    
+}
+
+/*footer end*/
